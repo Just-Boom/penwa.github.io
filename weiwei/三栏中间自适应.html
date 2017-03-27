@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两栏布局</title>
+    <style rel="stylesheet" type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family:'Amarante', cursive;
+            background: yellowgreen;
+            text-align: center;
+        }
+        /*===================================================*\
+         *                                                   *
+        *   Layout                                          *
+        *  .wrapper宽度=.sidebar宽度+间距+.main-content宽度 *
+        *                                                   *
+        \*===================================================*/
+        .header{
+            width: 100%;
+            margin-top:5px ;
+
+        }
+        .footer{
+            width: 100%;
+        }
+        .container:after,
+        .container:before {
+            content: "";
+            display: table;
+        }
+
+        .container:after {
+            clear: both;
+            overflow: hidden;
+        }
+        .container {
+            width: 960px; /*页面总宽度*/
+            margin: 0 auto; /*水平居中*/
+            text-align: left; /*重置文本对齐方式*/
+            zoom: 1;
+        }
+
+        .page{
+            width:960px;
+            margin: 5px auto;
+            position:relative;
+        }
+
+        .aside-sidebar-left{
+            width: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+        .aside-sidebar-right{
+            width: 200px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .main-content{
+            margin: 0 210px 0 210px;
+            margin-bottom: 5px;
+
+        }
+
+        /*===================================================*\
+        *                                                   *
+       *   Style                                           *
+       *  .
+       *                                                   *
+       \*===================================================*/
+        .wrapper{
+
+        }
+        .header{
+            height: 80px;
+            background: rosybrown;
+        }
+        .aside-sidebar-left,.aside-sidebar-right{
+            height:500px;
+            background: darkseagreen;
+        }
+        .main-content{
+            height: 500px;
+            background: greenyellow;
+
+        }
+        .footer{
+            clear: both;
+            background: gold;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Header Content</h1>
+        </div>
+    </div>
+    <div class="page">
+        <div class="aside-sidebar-left">
+            <h1>Left Sidebar Content</h1>
+        </div>
+        <div class="main-content">
+            <h1>Main content</h1>
+        </div>
+        <div class="aside-sidebar-right">
+            <h1>Right Sidebar Content</h1>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="container">
+            <h1>Footer</h1>
+        </div>
+    </div>
+
+</body>
+</html>
