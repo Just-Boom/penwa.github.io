@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | 陈嘉炜的blog</title>
+  <title>第二天唉 | 陈嘉炜的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Bootstrap下拉菜单默认需要通过点击，才可以打开，但是实际使用悬停代替点击能减少一步操作，更人性化。 所以对bootstrap下拉菜单进行改写-。- 经过分析出，其实就是在.dropdown 后面加多一个open类唉 用JQ写应该很简单 var dropdownList = $(.dropdown); dropdownList.mouseover(function(){     $(this">
+<meta name="keywords" content="JS Jquery">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/06/27/hello-world/index.html">
+<meta property="og:title" content="第二天唉">
+<meta property="og:url" content="http://yoursite.com/2017/06/28/第二天唉/index.html">
 <meta property="og:site_name" content="陈嘉炜的blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-06-27T03:17:34.380Z">
+<meta property="og:description" content="Bootstrap下拉菜单默认需要通过点击，才可以打开，但是实际使用悬停代替点击能减少一步操作，更人性化。 所以对bootstrap下拉菜单进行改写-。- 经过分析出，其实就是在.dropdown 后面加多一个open类唉 用JQ写应该很简单 var dropdownList = $(.dropdown); dropdownList.mouseover(function(){     $(this">
+<meta property="og:updated_time" content="2017-06-28T11:55:18.321Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="第二天唉">
+<meta name="twitter:description" content="Bootstrap下拉菜单默认需要通过点击，才可以打开，但是实际使用悬停代替点击能减少一步操作，更人性化。 所以对bootstrap下拉菜单进行改写-。- 经过分析出，其实就是在.dropdown 后面加多一个open类唉 用JQ写应该很简单 var dropdownList = $(.dropdown); dropdownList.mouseover(function(){     $(this">
   
     <link rel="alternate" href="/atom.xml" title="陈嘉炜的blog" type="application/atom+xml">
   
@@ -67,10 +68,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-第二天唉" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/06/27/hello-world/" class="article-date">
-  <time datetime="2017-06-27T03:17:34.380Z" itemprop="datePublished">2017-06-27</time>
+    <a href="/2017/06/28/第二天唉/" class="article-date">
+  <time datetime="2017-06-28T11:09:50.000Z" itemprop="datePublished">2017-06-28</time>
 </a>
     
   </div>
@@ -81,7 +82,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      第二天唉
     </h1>
   
 
@@ -89,37 +90,60 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>Bootstrap下拉菜单默认需要通过点击，才可以打开，但是实际使用悬停代替点击能减少一步操作，更人性化。</p>
+<p>所以对bootstrap下拉菜单进行改写-。-</p>
+<p>经过分析出，其实就是在.dropdown 后面加多一个open类唉</p>
+<p>用JQ写应该很简单</p>
+<pre><code class="javascript"><span class="keyword">var</span> dropdownList = $(.dropdown);
+dropdownList.mouseover(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+    $(<span class="keyword">this</span>).addClass(<span class="string">'open'</span>);
+}).mouseout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+    $(<span class="keyword">this</span>).removeClass(<span class="string">'open'</span>);
+});
+</code></pre>
+<p>我又想试着用原生去实现一下，增加类和删除类</p>
+<p>一个蠢萌的方法</p>
+<pre><code class="javascript"><span class="keyword">var</span> dropdownLi = <span class="built_in">document</span>.getElementsByClassName(<span class="string">"dropdown"</span>);
+<span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;dropdownLi.length; i++){
+  <span class="keyword">var</span> aLi = dropdownLi[i];
+  aLi.onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{ 
+  <span class="keyword">this</span>.setAttribute(<span class="string">"class"</span>,<span class="string">"dropdown open"</span>);
+  }
+  aLi.onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{ 
+  <span class="keyword">this</span>.setAttribute(<span class="string">"class"</span>,<span class="string">"dropdown"</span>);
+  }
+ }
+</code></pre>
+<p>其实应该通过动态添加类删除类实现的</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/27/hello-world/" data-id="cj52l0n5k0001104s97gkh868" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/28/第二天唉/" data-id="cj52l0n5m0002104sw7stjlch" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS-Jquery/">JS Jquery</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2017/06/27/第一篇博客/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/07/13/JS基础知识/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          第一篇博客
+          JS基础知识
         
       </div>
     </a>
   
+  
+    <a href="/2017/06/27/第一篇博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">第一篇博客</div>
+    </a>
   
 </nav>
 
