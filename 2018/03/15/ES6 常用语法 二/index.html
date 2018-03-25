@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>ES6 常用语法 二 | 陈嘉炜的blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="新的数据结构  Set，元素不可重复  ES6 提供了新的数据结构 Set。它类似于数组，但是成员的值都是唯一的，没有重复的值。  Set 本身是一个构造函数，用来生成 Set 数据结构。  12345678const s = new Set();[2, 3, 5, 4, 5, 2, 2].forEach(x =&amp;gt; s.add(x));for (let i of s) &amp;#123;  co">
+<meta name="keywords" content="ES6">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6 常用语法 二">
+<meta property="og:url" content="http://yoursite.com/2018/03/15/ES6 常用语法 二/index.html">
+<meta property="og:site_name" content="陈嘉炜的blog">
+<meta property="og:description" content="新的数据结构  Set，元素不可重复  ES6 提供了新的数据结构 Set。它类似于数组，但是成员的值都是唯一的，没有重复的值。  Set 本身是一个构造函数，用来生成 Set 数据结构。  12345678const s = new Set();[2, 3, 5, 4, 5, 2, 2].forEach(x =&amp;gt; s.add(x));for (let i of s) &amp;#123;  co">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/10864329-e0c6ae3d97f4b2fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-03-25T04:38:28.915Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ES6 常用语法 二">
+<meta name="twitter:description" content="新的数据结构  Set，元素不可重复  ES6 提供了新的数据结构 Set。它类似于数组，但是成员的值都是唯一的，没有重复的值。  Set 本身是一个构造函数，用来生成 Set 数据结构。  12345678const s = new Set();[2, 3, 5, 4, 5, 2, 2].forEach(x =&amp;gt; s.add(x));for (let i of s) &amp;#123;  co">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/10864329-e0c6ae3d97f4b2fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternate" href="/atom.xml" title="陈嘉炜的blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">陈嘉炜的blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">乱七八糟的全栈</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-ES6 常用语法 二" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/15/ES6 常用语法 二/" class="article-date">
+  <time datetime="2018-03-15T14:41:00.000Z" itemprop="datePublished">2018-03-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ES6 常用语法 二
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>新的数据结构</p>
+<ul>
+<li><p><code>Set</code>，元素不可重复</p>
+<p> ES6 提供了新的数据结构 Set。它类似于数组，但是成员的值都是唯一的，没有重复的值。</p>
+<p> Set 本身是一个构造函数，用来生成 Set 数据结构。</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> s = <span class="keyword">new</span> <span class="built_in">Set</span>();</div><div class="line"></div><div class="line">[<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">2</span>].forEach(<span class="function"><span class="params">x</span> =&gt;</span> s.add(x));</div><div class="line"></div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">of</span> s) &#123;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;</div><div class="line"><span class="comment">// 2 3 5 4</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><code>Map</code></p>
+</li>
+<li><p><code>Symbol</code></p>
+<p> ES6 引入了一种新的原始数据类型Symbol，表示独一无二的值。它是 JavaScript 语言的第七种数据类型，前六种是：<code>undefined</code>、<code>null</code>、布尔值（<code>Boolean</code>）、字符串（<code>String</code>）、数值（<code>Number</code>）、对象（<code>Object</code>)。</p>
+<ul>
+<li>模块化</li>
+<li><code>import ,import {}</code></li>
+<li><code>export ,export default</code></li>
+<li><p>Node 用<code>require</code></p>
+<p>模块功能主要由两个命令构成：<code>export</code>和<code>import</code>。<br><code>export</code>命令用于规定模块的对外接口，<code>import</code>命令用于输入其他模块提供的功能。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Promise<br><img src="https://upload-images.jianshu.io/upload_images/10864329-e0c6ae3d97f4b2fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图 源自廖雪峰的官方网站"></li>
+</ul>
+<ul>
+<li>Fetch</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/15/ES6 常用语法 二/" data-id="cjf6ba0lg0000ekxc0mp36xu5" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6/">ES6</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/03/16/前端实现三角形的三种方法/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          前端实现三角形的三种方法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/03/11/ES6 常用语法 一/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ES6 常用语法 一</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6-JS基础/">ES6 JS基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS-Jquery/">JS Jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS基础/">JS基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/基础/">基础</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/ES6-JS基础/" style="font-size: 10px;">ES6 JS基础</a> <a href="/tags/JS-Jquery/" style="font-size: 10px;">JS Jquery</a> <a href="/tags/JS基础/" style="font-size: 10px;">JS基础</a> <a href="/tags/基础/" style="font-size: 10px;">基础</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/16/前端实现三角形的三种方法/">前端实现三角形的三种方法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/15/ES6 常用语法 二/">ES6 常用语法 二</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/11/ES6 常用语法 一/">ES6 常用语法 一</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/13/JS基础知识/">JS基础知识(1)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/28/鼠标悬停添加类/">鼠标悬停添加类</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 陈嘉炜<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -68,6 +68,237 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-前端实现三角形的三种方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/16/前端实现三角形的三种方法/" class="article-date">
+  <time datetime="2018-03-16T15:52:00.000Z" itemprop="datePublished">2018-03-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/16/前端实现三角形的三种方法/">前端实现三角形的三种方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第一种 HTML+CSS</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">  .box&#123;</div><div class="line">    width:0;</div><div class="line">    height:0;</div><div class="line">    border:10px solid;</div><div class="line">    border-color:transparent transparent red red ;</div><div class="line">  &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>第二种 通过canvas</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"canvas"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line"><span class="keyword">var</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>);</div><div class="line"> <span class="keyword">if</span> (canvas.getContext)&#123;</div><div class="line">   <span class="keyword">var</span> ctx = canvas.getContext(<span class="string">'2d'</span>);</div><div class="line">    ctx.beginPath();</div><div class="line">    ctx.moveTo(<span class="number">75</span>,<span class="number">50</span>);</div><div class="line">    ctx.lineTo(<span class="number">100</span>,<span class="number">75</span>);</div><div class="line">    ctx.lineTo(<span class="number">100</span>,<span class="number">25</span>);</div><div class="line">    ctx.fill();</div><div class="line"> &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>第三种 SVG</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" standalone="no"?&gt;</div><div class="line"><span class="meta">&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" </span></div><div class="line">"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"100%"</span> <span class="attr">version</span>=<span class="string">"1.1"</span></span></div><div class="line"><span class="attr">xmlns</span>=<span class="string">"http://www.w3.org/2000/svg"</span>&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">polygon</span> <span class="attr">points</span>=<span class="string">"220,100 300,210 170,250"</span></span></div><div class="line"><span class="attr">style</span>=<span class="string">"fill:#cccccc;</span></div><div class="line">stroke:#000000;stroke-width:1"/&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/16/前端实现三角形的三种方法/" data-id="cjf6bd6740004ekxcht3vmh8o" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS基础/">JS基础</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-ES6 常用语法 二" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/15/ES6 常用语法 二/" class="article-date">
+  <time datetime="2018-03-15T14:41:00.000Z" itemprop="datePublished">2018-03-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/15/ES6 常用语法 二/">ES6 常用语法 二</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>新的数据结构</p>
+<ul>
+<li><p><code>Set</code>，元素不可重复</p>
+<p> ES6 提供了新的数据结构 Set。它类似于数组，但是成员的值都是唯一的，没有重复的值。</p>
+<p> Set 本身是一个构造函数，用来生成 Set 数据结构。</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> s = <span class="keyword">new</span> <span class="built_in">Set</span>();</div><div class="line"></div><div class="line">[<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">2</span>].forEach(<span class="function"><span class="params">x</span> =&gt;</span> s.add(x));</div><div class="line"></div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">of</span> s) &#123;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;</div><div class="line"><span class="comment">// 2 3 5 4</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><code>Map</code></p>
+</li>
+<li><p><code>Symbol</code></p>
+<p> ES6 引入了一种新的原始数据类型Symbol，表示独一无二的值。它是 JavaScript 语言的第七种数据类型，前六种是：<code>undefined</code>、<code>null</code>、布尔值（<code>Boolean</code>）、字符串（<code>String</code>）、数值（<code>Number</code>）、对象（<code>Object</code>)。</p>
+<ul>
+<li>模块化</li>
+<li><code>import ,import {}</code></li>
+<li><code>export ,export default</code></li>
+<li><p>Node 用<code>require</code></p>
+<p>模块功能主要由两个命令构成：<code>export</code>和<code>import</code>。<br><code>export</code>命令用于规定模块的对外接口，<code>import</code>命令用于输入其他模块提供的功能。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Promise<br><img src="https://upload-images.jianshu.io/upload_images/10864329-e0c6ae3d97f4b2fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图 源自廖雪峰的官方网站"></li>
+</ul>
+<ul>
+<li>Fetch</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/15/ES6 常用语法 二/" data-id="cjf6ba0lg0000ekxc0mp36xu5" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6/">ES6</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-ES6 常用语法 一" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/11/ES6 常用语法 一/" class="article-date">
+  <time datetime="2018-03-11T13:13:00.000Z" itemprop="datePublished">2018-03-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/11/ES6 常用语法 一/">ES6 常用语法 一</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> <strong>ES6 是什么</strong></p>
+<ul>
+<li>ECMAScript 2015 于2015年6月正式发布</li>
+<li>可以使用babel语法转换器，支持低端浏览器</li>
+<li><p>流行的库都基于ES6构建，React默认使用ES6开发</p>
+<p><strong>ES6 有啥</strong></p>
+</li>
+<li><p>块级作用域、字符串、函数</p>
+<ul>
+<li><p>作用域</p>
+<ul>
+<li>定义变量使用 <code>let</code> 替代 <code>var</code></li>
+<li><code>const</code>  定义不可修改的变量</li>
+<li>作用域和{}<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="keyword">var</span> name1 = <span class="string">'cjw'</span>;</div><div class="line">    <span class="keyword">let</span> name2 = <span class="string">'cjw'</span>;</div><div class="line">&#125;</div><div class="line">   <span class="built_in">console</span>.log(name1) <span class="comment">//cjw</span></div><div class="line">   <span class="built_in">console</span>.log(name2) <span class="comment">//name2 is not defined</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>字符串</p>
+<ul>
+<li>模版字符出纳<ul>
+<li>使用反引号</li>
+<li>多行字符串</li>
+<li>告别+拼接字符串<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="string">'chenjiawei'</span></div><div class="line"><span class="keyword">let</span> age = <span class="string">'18'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">'My name is '</span> +name+<span class="string">' ,I am '</span> + age + <span class="string">' old'</span>) </div><div class="line"><span class="built_in">console</span>.log(<span class="string">`My name is <span class="subst">$&#123;name&#125;</span> ,I am <span class="subst">$&#123;age&#125;</span> old `</span>)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>函数拓展</p>
+<ul>
+<li><p>参数默认值</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">//  曾经的写法</span></div><div class="line"><span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> a = a || <span class="number">12</span></div><div class="line">    <span class="keyword">var</span> b = b || <span class="number">55</span></div><div class="line">    <span class="keyword">return</span> a+b;</div><div class="line">&#125;</div><div class="line"><span class="comment">// ES6</span></div><div class="line"><span class="function"><span class="keyword">function</span>(<span class="params">a=<span class="number">12</span>,b=<span class="number">15</span></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> a+b;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>箭头函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">x =&gt; x*x </div><div class="line"></div><div class="line">x=&gt;&#123;</div><div class="line">    <span class="keyword">if</span>(x&gt;<span class="number">0</span>)&#123;</div><div class="line">    <span class="keyword">return</span> x * x;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> &#123;</div><div class="line">    <span class="keyword">return</span> - x * x;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>箭头函数和匿名函数有个区别：<br> 箭头函数的this是词法作用域，由上下文确定，也就是指向外层调用者。匿名函数的this最终指向的是调用它的对象。<br> 由于this在箭头函数中按照词法作用域绑定，所以用call() 和 apply() 无法对this进行绑定。<br> 箭头函数不能用作构造器，和 <code>new</code>一起用会抛出错误。<br> 箭头函数没有<code>prototype</code>属性。</p>
+</li>
+<li><p>展开运算符</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">a,b</span>)</span>&#123;</div><div class="line"><span class="built_in">console</span>.log(a,b);</div><div class="line">&#125;</div><div class="line"><span class="keyword">let</span> arr = [<span class="string">'hello'</span>,<span class="string">'world'</span>];</div><div class="line">fn.apply(<span class="literal">null</span>,arr) <span class="comment">//曾经的方法</span></div><div class="line">fn(...arr) <span class="comment">//利用展开运算符</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>对象扩展、解构</p>
+<ul>
+<li><p><code>Object</code>拓展</p>
+<ul>
+<li><p><code>Object.keys、values、entries</code></p>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* Array 对象 */</span> </div><div class="line"><span class="keyword">let</span> arr = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>];</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(arr)); <span class="comment">// ["0", "1", "2"]</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.values(arr)); <span class="comment">// ["a", "b", "c"]</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.entries(arr)); <span class="comment">// [["0", "a"], ["1", "b"], ["2", "c"]]</span></div><div class="line"></div><div class="line"><span class="comment">/* Object 对象 */</span> </div><div class="line"><span class="keyword">let</span> obj = &#123; <span class="attr">foo</span>: <span class="string">"bar"</span>, <span class="attr">baz</span>: <span class="number">42</span> &#125;;</div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(obj )); <span class="comment">// ["foo", "baz"]</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.values(obj )); <span class="comment">// ["bar", 42]</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.entries(obj )); <span class="comment">// [["foo", "bar"], ["baz", 42]]</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>对象方法简写，计算属性</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="string">'cjw'</span></div><div class="line"><span class="keyword">const</span> obj = &#123;</div><div class="line">  name,</div><div class="line">  [name]:<span class="string">'cjw'</span>,</div><div class="line">  <span class="attr">hello</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  &#125;,</div><div class="line">  hello1()&#123;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(obj) <span class="comment">//&#123;name: "cjw", cjw: "cjw", hello: ƒ, hello1: ƒ&#125;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>展开运算符（不是ES6标准，但是babel支持）</p>
+</li>
+</ul>
+</li>
+<li><p>解构赋值<br> 函数可以多返回值</p>
+<ul>
+<li>数组解构</li>
+<li><p>对象解构</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div><div class="line"></div><div class="line"><span class="comment">// 返回一个数组</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">example</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> [a, b, c] = example();</div><div class="line"></div><div class="line"><span class="comment">// 返回一个对象</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">example</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> &#123;</div><div class="line">    <span class="attr">foo</span>: <span class="number">1</span>,</div><div class="line">    <span class="attr">bar</span>: <span class="number">2</span></div><div class="line">  &#125;;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> &#123;foo, bar&#125; = example();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>类、模块化等</p>
+<ul>
+<li>类<ul>
+<li>是<code>prototype</code>的语法糖</li>
+<li><code>Extends</code>继承</li>
+<li><code>Constructor</code>构造函数<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"> <span class="class"><span class="keyword">class</span> <span class="title">Rectangle</span> </span>&#123;</div><div class="line">  <span class="comment">// constructor</span></div><div class="line">  <span class="keyword">constructor</span>(height, width) &#123;</div><div class="line">    <span class="keyword">this</span>.height = height;</div><div class="line">    <span class="keyword">this</span>.width = width;</div><div class="line">  &#125;</div><div class="line">  <span class="comment">// Getter</span></div><div class="line">  get area() &#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.calcArea()</div><div class="line">  &#125;</div><div class="line">  <span class="comment">// Method</span></div><div class="line">  calcArea() &#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.height * <span class="keyword">this</span>.width;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">const</span> square = <span class="keyword">new</span> Rectangle(<span class="number">10</span>, <span class="number">10</span>);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(square.area);</div><div class="line"><span class="comment">// 100</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/11/ES6 常用语法 一/" data-id="cjf69wklj0000l4xc072lzdfl" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6-JS基础/">ES6 JS基础</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-JS基础知识" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/13/JS基础知识/" class="article-date">
@@ -82,7 +313,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/13/JS基础知识/">JS基础知识</a>
+      <a class="article-title" href="/2017/07/13/JS基础知识/">JS基础知识(1)</a>
     </h1>
   
 
@@ -90,12 +321,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Q:JS typeof 能得到的类型</p>
+        <h4 id="Q-JS-typeof-能得到的类型"><a href="#Q-JS-typeof-能得到的类型" class="headerlink" title="Q:JS typeof 能得到的类型"></a>Q:JS typeof 能得到的类型</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typeof</span> <span class="literal">undefined</span> <span class="comment">//undefined</span></div><div class="line"><span class="keyword">typeof</span> <span class="string">'abc'</span> <span class="comment">//string</span></div><div class="line"><span class="keyword">typeof</span> <span class="number">123</span> <span class="comment">//number</span></div><div class="line"><span class="keyword">typeof</span> <span class="literal">true</span> <span class="comment">//boolean</span></div><div class="line"><span class="keyword">typeof</span> &#123;&#125; <span class="comment">//object</span></div><div class="line"><span class="keyword">typeof</span> [] <span class="comment">//object</span></div><div class="line"><span class="keyword">typeof</span> <span class="literal">null</span> <span class="comment">//object </span></div><div class="line"><span class="keyword">typeof</span> <span class="built_in">console</span>.log <span class="comment">//function</span></div></pre></td></tr></table></figure>
+<h4 id="Q-何时使用-和"><a href="#Q-何时使用-和" class="headerlink" title="Q:何时使用 === 和 =="></a>Q:何时使用 === 和 ==</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(obj.a == <span class="literal">null</span>)&#123;</div><div class="line">	<span class="comment">//这里相当于 obj.a === null || obj.a === undefined ,简单写法</span></div><div class="line">	<span class="comment">//这是jquery源码中推荐的写法</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>其它时候为了避免不必要的错误 用===</p>
+<h4 id="Q-JS的内置函数"><a href="#Q-JS的内置函数" class="headerlink" title="Q:JS的内置函数"></a>Q:JS的内置函数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Object</span></div><div class="line"><span class="built_in">Array</span></div><div class="line"><span class="built_in">Boolean</span></div><div class="line"><span class="built_in">Number</span></div><div class="line"><span class="built_in">String</span></div><div class="line"><span class="built_in">Function</span></div><div class="line"><span class="built_in">Date</span></div><div class="line"><span class="built_in">RegExp</span></div><div class="line"><span class="built_in">Error</span></div></pre></td></tr></table></figure>
+<h4 id="Q-JS按存储方式分变量类型"><a href="#Q-JS按存储方式分变量类型" class="headerlink" title="Q:JS按存储方式分变量类型"></a>Q:JS按存储方式分变量类型</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//值类型</span></div><div class="line"><span class="keyword">var</span> a = <span class="number">10</span></div><div class="line"><span class="keyword">var</span> b = a</div><div class="line">a = <span class="number">11</span></div><div class="line"><span class="built_in">console</span>.log(b) <span class="comment">//10</span></div><div class="line"></div><div class="line"><span class="comment">//引用类型</span></div><div class="line"><span class="keyword">var</span> obj1 = &#123;<span class="attr">x</span>:<span class="number">100</span>&#125;</div><div class="line"><span class="keyword">var</span> obj2 = obj1</div><div class="line">obj1.x = <span class="number">200</span></div><div class="line"><span class="built_in">console</span>.log(obj2.x) <span class="comment">//200</span></div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/13/JS基础知识/" data-id="cj52l0n5f0000104s6vrexqun" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/13/JS基础知识/" data-id="cjf69wkln0001l4xcucl6d9aq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -105,9 +340,9 @@
 
 
   
-    <article id="post-第二天唉" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-鼠标悬停添加类" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/06/28/第二天唉/" class="article-date">
+    <a href="/2017/06/28/鼠标悬停添加类/" class="article-date">
   <time datetime="2017-06-28T11:09:50.000Z" itemprop="datePublished">2017-06-28</time>
 </a>
     
@@ -119,7 +354,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/28/第二天唉/">第二天唉</a>
+      <a class="article-title" href="/2017/06/28/鼠标悬停添加类/">鼠标悬停添加类</a>
     </h1>
   
 
@@ -129,7 +364,7 @@
       
         <p>Bootstrap下拉菜单默认需要通过点击，才可以打开，但是实际使用悬停代替点击能减少一步操作，更人性化。</p>
 <p>所以对bootstrap下拉菜单进行改写-。-</p>
-<p>经过分析出，其实就是在.dropdown 后面加多一个open类唉</p>
+<p>经过分析出，其实就是在.dropdown 后面加多一个open类</p>
 <p>用JQ写应该很简单</p>
 <pre><code class="javascript"><span class="keyword">var</span> dropdownList = $(.dropdown);
 dropdownList.mouseover(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
@@ -156,7 +391,7 @@ dropdownList.mouseover(<span class="function"><span class="keyword">function</sp
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/28/第二天唉/" data-id="cj52l0n5m0002104sw7stjlch" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/28/鼠标悬停添加类/" data-id="cjf69wkls0004l4xcw7nw1s5t" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS-Jquery/">JS Jquery</a></li></ul>
@@ -223,56 +458,11 @@ dropdownList.mouseover(<span class="function"><span class="keyword">function</sp
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/27/第一篇博客/" data-id="cj52l0n5o0003104s92rwr0vf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/27/第一篇博客/" data-id="cjf69wklr0003l4xcbi2oa5bx" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/基础/">基础</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/06/27/hello-world/" class="article-date">
-  <time datetime="2017-06-27T03:17:34.380Z" itemprop="datePublished">2017-06-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/27/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/27/hello-world/" data-id="cj52l0n5k0001104s97gkh868" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
@@ -292,7 +482,7 @@ dropdownList.mouseover(<span class="function"><span class="keyword">function</sp
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS-Jquery/">JS Jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/基础/">基础</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6-JS基础/">ES6 JS基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS-Jquery/">JS Jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS基础/">JS基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/基础/">基础</a></li></ul>
     </div>
   </div>
 
@@ -302,7 +492,7 @@ dropdownList.mouseover(<span class="function"><span class="keyword">function</sp
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/JS-Jquery/" style="font-size: 10px;">JS Jquery</a> <a href="/tags/基础/" style="font-size: 10px;">基础</a>
+      <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/ES6-JS基础/" style="font-size: 10px;">ES6 JS基础</a> <a href="/tags/JS-Jquery/" style="font-size: 10px;">JS Jquery</a> <a href="/tags/JS基础/" style="font-size: 10px;">JS基础</a> <a href="/tags/基础/" style="font-size: 10px;">基础</a>
     </div>
   </div>
 
@@ -311,7 +501,7 @@ dropdownList.mouseover(<span class="function"><span class="keyword">function</sp
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
     </div>
   </div>
 
@@ -324,19 +514,23 @@ dropdownList.mouseover(<span class="function"><span class="keyword">function</sp
       <ul>
         
           <li>
-            <a href="/2017/07/13/JS基础知识/">JS基础知识</a>
+            <a href="/2018/03/16/前端实现三角形的三种方法/">前端实现三角形的三种方法</a>
           </li>
         
           <li>
-            <a href="/2017/06/28/第二天唉/">第二天唉</a>
+            <a href="/2018/03/15/ES6 常用语法 二/">ES6 常用语法 二</a>
           </li>
         
           <li>
-            <a href="/2017/06/27/第一篇博客/">第一篇博客</a>
+            <a href="/2018/03/11/ES6 常用语法 一/">ES6 常用语法 一</a>
           </li>
         
           <li>
-            <a href="/2017/06/27/hello-world/">Hello World</a>
+            <a href="/2017/07/13/JS基础知识/">JS基础知识(1)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/28/鼠标悬停添加类/">鼠标悬停添加类</a>
           </li>
         
       </ul>
@@ -351,7 +545,7 @@ dropdownList.mouseover(<span class="function"><span class="keyword">function</sp
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2017 陈嘉炜<br>
+      &copy; 2018 陈嘉炜<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

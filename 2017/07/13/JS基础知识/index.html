@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>JS基础知识 | 陈嘉炜的blog</title>
+  <title>JS基础知识(1) | 陈嘉炜的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Q:JS typeof 能得到的类型">
+  <meta name="description" content="Q:JS typeof 能得到的类型12345678typeof undefined //undefinedtypeof &apos;abc&apos; //stringtypeof 123 //numbertypeof true //booleantypeof &amp;#123;&amp;#125; //objecttypeof [] //objecttypeof null //object typeof console.log">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS基础知识">
+<meta property="og:title" content="JS基础知识(1)">
 <meta property="og:url" content="http://yoursite.com/2017/07/13/JS基础知识/index.html">
 <meta property="og:site_name" content="陈嘉炜的blog">
-<meta property="og:description" content="Q:JS typeof 能得到的类型">
-<meta property="og:updated_time" content="2017-07-13T15:20:47.333Z">
+<meta property="og:description" content="Q:JS typeof 能得到的类型12345678typeof undefined //undefinedtypeof &apos;abc&apos; //stringtypeof 123 //numbertypeof true //booleantypeof &amp;#123;&amp;#125; //objecttypeof [] //objecttypeof null //object typeof console.log">
+<meta property="og:updated_time" content="2017-07-13T15:37:15.646Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS基础知识">
-<meta name="twitter:description" content="Q:JS typeof 能得到的类型">
+<meta name="twitter:title" content="JS基础知识(1)">
+<meta name="twitter:description" content="Q:JS typeof 能得到的类型12345678typeof undefined //undefinedtypeof &apos;abc&apos; //stringtypeof 123 //numbertypeof true //booleantypeof &amp;#123;&amp;#125; //objecttypeof [] //objecttypeof null //object typeof console.log">
   
     <link rel="alternate" href="/atom.xml" title="陈嘉炜的blog" type="application/atom+xml">
   
@@ -81,7 +81,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      JS基础知识
+      JS基础知识(1)
     </h1>
   
 
@@ -89,12 +89,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Q:JS typeof 能得到的类型</p>
+        <h4 id="Q-JS-typeof-能得到的类型"><a href="#Q-JS-typeof-能得到的类型" class="headerlink" title="Q:JS typeof 能得到的类型"></a>Q:JS typeof 能得到的类型</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typeof</span> <span class="literal">undefined</span> <span class="comment">//undefined</span></div><div class="line"><span class="keyword">typeof</span> <span class="string">'abc'</span> <span class="comment">//string</span></div><div class="line"><span class="keyword">typeof</span> <span class="number">123</span> <span class="comment">//number</span></div><div class="line"><span class="keyword">typeof</span> <span class="literal">true</span> <span class="comment">//boolean</span></div><div class="line"><span class="keyword">typeof</span> &#123;&#125; <span class="comment">//object</span></div><div class="line"><span class="keyword">typeof</span> [] <span class="comment">//object</span></div><div class="line"><span class="keyword">typeof</span> <span class="literal">null</span> <span class="comment">//object </span></div><div class="line"><span class="keyword">typeof</span> <span class="built_in">console</span>.log <span class="comment">//function</span></div></pre></td></tr></table></figure>
+<h4 id="Q-何时使用-和"><a href="#Q-何时使用-和" class="headerlink" title="Q:何时使用 === 和 =="></a>Q:何时使用 === 和 ==</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(obj.a == <span class="literal">null</span>)&#123;</div><div class="line">	<span class="comment">//这里相当于 obj.a === null || obj.a === undefined ,简单写法</span></div><div class="line">	<span class="comment">//这是jquery源码中推荐的写法</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>其它时候为了避免不必要的错误 用===</p>
+<h4 id="Q-JS的内置函数"><a href="#Q-JS的内置函数" class="headerlink" title="Q:JS的内置函数"></a>Q:JS的内置函数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Object</span></div><div class="line"><span class="built_in">Array</span></div><div class="line"><span class="built_in">Boolean</span></div><div class="line"><span class="built_in">Number</span></div><div class="line"><span class="built_in">String</span></div><div class="line"><span class="built_in">Function</span></div><div class="line"><span class="built_in">Date</span></div><div class="line"><span class="built_in">RegExp</span></div><div class="line"><span class="built_in">Error</span></div></pre></td></tr></table></figure>
+<h4 id="Q-JS按存储方式分变量类型"><a href="#Q-JS按存储方式分变量类型" class="headerlink" title="Q:JS按存储方式分变量类型"></a>Q:JS按存储方式分变量类型</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//值类型</span></div><div class="line"><span class="keyword">var</span> a = <span class="number">10</span></div><div class="line"><span class="keyword">var</span> b = a</div><div class="line">a = <span class="number">11</span></div><div class="line"><span class="built_in">console</span>.log(b) <span class="comment">//10</span></div><div class="line"></div><div class="line"><span class="comment">//引用类型</span></div><div class="line"><span class="keyword">var</span> obj1 = &#123;<span class="attr">x</span>:<span class="number">100</span>&#125;</div><div class="line"><span class="keyword">var</span> obj2 = obj1</div><div class="line">obj1.x = <span class="number">200</span></div><div class="line"><span class="built_in">console</span>.log(obj2.x) <span class="comment">//200</span></div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/13/JS基础知识/" data-id="cj52l0n5f0000104s6vrexqun" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/13/JS基础知识/" data-id="cjf69wkln0001l4xcucl6d9aq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -103,10 +107,19 @@
     
 <nav id="article-nav">
   
+    <a href="/2018/03/11/ES6 常用语法 一/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          ES6 常用语法 一
+        
+      </div>
+    </a>
   
-    <a href="/2017/06/28/第二天唉/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2017/06/28/鼠标悬停添加类/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">第二天唉</div>
+      <div class="article-nav-title">鼠标悬停添加类</div>
     </a>
   
 </nav>
@@ -125,7 +138,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS-Jquery/">JS Jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/基础/">基础</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6-JS基础/">ES6 JS基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS-Jquery/">JS Jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS基础/">JS基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/基础/">基础</a></li></ul>
     </div>
   </div>
 
@@ -135,7 +148,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/JS-Jquery/" style="font-size: 10px;">JS Jquery</a> <a href="/tags/基础/" style="font-size: 10px;">基础</a>
+      <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/ES6-JS基础/" style="font-size: 10px;">ES6 JS基础</a> <a href="/tags/JS-Jquery/" style="font-size: 10px;">JS Jquery</a> <a href="/tags/JS基础/" style="font-size: 10px;">JS基础</a> <a href="/tags/基础/" style="font-size: 10px;">基础</a>
     </div>
   </div>
 
@@ -144,7 +157,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
     </div>
   </div>
 
@@ -157,19 +170,23 @@
       <ul>
         
           <li>
-            <a href="/2017/07/13/JS基础知识/">JS基础知识</a>
+            <a href="/2018/03/16/前端实现三角形的三种方法/">前端实现三角形的三种方法</a>
           </li>
         
           <li>
-            <a href="/2017/06/28/第二天唉/">第二天唉</a>
+            <a href="/2018/03/15/ES6 常用语法 二/">ES6 常用语法 二</a>
           </li>
         
           <li>
-            <a href="/2017/06/27/第一篇博客/">第一篇博客</a>
+            <a href="/2018/03/11/ES6 常用语法 一/">ES6 常用语法 一</a>
           </li>
         
           <li>
-            <a href="/2017/06/27/hello-world/">Hello World</a>
+            <a href="/2017/07/13/JS基础知识/">JS基础知识(1)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/28/鼠标悬停添加类/">鼠标悬停添加类</a>
           </li>
         
       </ul>
@@ -184,7 +201,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2017 陈嘉炜<br>
+      &copy; 2018 陈嘉炜<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
