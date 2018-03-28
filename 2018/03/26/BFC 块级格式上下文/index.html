@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档: 2018 | 陈嘉炜的blog</title>
+  <title>BFC 块级格式上下文 | 陈嘉炜的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="你好呀~~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="陈嘉炜的blog">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="一、常见定位方案 标准流(normal flow)  浮动(float)  绝对定位(absolute positioning)   二、BFC(Block Formatting Contexts) BFC为格式化上下文  具有BFC特性的元素可以看作是隔离了的独立容器，容器内的元素不会在布局上影响到外面的元素，并且BFC具有普通容器没有的一些特性 三、触发BFC body根元素  浮动元素：fl">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BFC 块级格式上下文">
+<meta property="og:url" content="http://yoursite.com/2018/03/26/BFC 块级格式上下文/index.html">
 <meta property="og:site_name" content="陈嘉炜的blog">
-<meta property="og:description" content="你好呀~~">
+<meta property="og:description" content="一、常见定位方案 标准流(normal flow)  浮动(float)  绝对定位(absolute positioning)   二、BFC(Block Formatting Contexts) BFC为格式化上下文  具有BFC特性的元素可以看作是隔离了的独立容器，容器内的元素不会在布局上影响到外面的元素，并且BFC具有普通容器没有的一些特性 三、触发BFC body根元素  浮动元素：fl">
+<meta property="og:updated_time" content="2018-03-26T14:46:24.075Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="陈嘉炜的blog">
-<meta name="twitter:description" content="你好呀~~">
+<meta name="twitter:title" content="BFC 块级格式上下文">
+<meta name="twitter:description" content="一、常见定位方案 标准流(normal flow)  浮动(float)  绝对定位(absolute positioning)   二、BFC(Block Formatting Contexts) BFC为格式化上下文  具有BFC特性的元素可以看作是隔离了的独立容器，容器内的元素不会在布局上影响到外面的元素，并且BFC具有普通容器没有的一些特性 三、触发BFC body根元素  浮动元素：fl">
   
     <link rel="alternate" href="/atom.xml" title="陈嘉炜的blog" type="application/atom+xml">
   
@@ -66,96 +68,83 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/26/BFC 块级格式上下文/" class="archive-article-date">
-  <time datetime="2018-03-26T13:56:36.278Z" itemprop="datePublished">3月 26</time>
+        <section id="main"><article id="post-BFC 块级格式上下文" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/26/BFC 块级格式上下文/" class="article-date">
+  <time datetime="2018-03-26T13:56:36.278Z" itemprop="datePublished">2018-03-26</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/26/BFC 块级格式上下文/">BFC 块级格式上下文</a>
+    <h1 class="article-title" itemprop="name">
+      BFC 块级格式上下文
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/16/前端实现三角形的三种方法/" class="archive-article-date">
-  <time datetime="2018-03-16T15:52:00.000Z" itemprop="datePublished">3月 16</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/16/前端实现三角形的三种方法/">前端实现三角形的三种方法</a>
-    </h1>
-  
+        <h4 id="一、常见定位方案"><a href="#一、常见定位方案" class="headerlink" title="一、常见定位方案"></a>一、常见定位方案</h4><ul>
+<li><p>标准流(normal flow)</p>
+</li>
+<li><p>浮动(float)</p>
+</li>
+<li><p>绝对定位(absolute positioning)</p>
+</li>
+</ul>
+<h4 id="二、BFC-Block-Formatting-Contexts"><a href="#二、BFC-Block-Formatting-Contexts" class="headerlink" title="二、BFC(Block Formatting Contexts)"></a>二、BFC(Block Formatting Contexts)</h4><p> BFC为格式化上下文</p>
+<p> 具有BFC特性的元素可以看作是隔离了的独立容器，容器内的元素不会在布局上影响到外面的元素，并且BFC具有普通容器没有的一些特性</p>
+<h4 id="三、触发BFC"><a href="#三、触发BFC" class="headerlink" title="三、触发BFC"></a>三、触发BFC</h4><ul>
+<li><p>body根元素</p>
+</li>
+<li><p>浮动元素：float除none以外的值</p>
+</li>
+<li><p>绝对定位元素：position(absolute,fixed)</p>
+</li>
+<li><p>display为inline-block、table-cells、flex</p>
+</li>
+<li><p>overflow除了visible以外的值(hidden、auto、scroll)</p>
+</li>
+</ul>
+<h4 id="四、BFC特性及应用"><a href="#四、BFC特性及应用" class="headerlink" title="四、BFC特性及应用"></a>四、BFC特性及应用</h4><ol>
+<li><p>同一个BFC下外边距会发生折叠</p>
+</li>
+<li><p>BFC可以包含浮动元素</p>
+</li>
+<li><p>BFC可以阻止元素被浮动元素覆盖</p>
+</li>
+</ol>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/15/ES6 常用语法 二/" class="archive-article-date">
-  <time datetime="2018-03-15T14:41:00.000Z" itemprop="datePublished">3月 15</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/15/ES6 常用语法 二/">ES6 常用语法 二</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/11/ES6 常用语法 一/" class="archive-article-date">
-  <time datetime="2018-03-11T13:13:00.000Z" itemprop="datePublished">3月 11</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/26/BFC 块级格式上下文/" data-id="cjfb4eoma0001c8xc2fu6c06v" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/11/ES6 常用语法 一/">ES6 常用语法 一</a>
-    </h1>
-  
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/03/16/前端实现三角形的三种方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">前端实现三角形的三种方法</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
