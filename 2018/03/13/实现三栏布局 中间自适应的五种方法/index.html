@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>实现三栏布局 中间自适应的五种方法 | 陈嘉炜的blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="CSS布局是前端笔面试经常会被问到的问道。 今天总结一下五种方法 实现三栏布局 两边固定宽度 中间自适应的实现 。  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566      *&amp;#123;    m">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实现三栏布局 中间自适应的五种方法">
+<meta property="og:url" content="http://yoursite.com/2018/03/13/实现三栏布局 中间自适应的五种方法/index.html">
+<meta property="og:site_name" content="陈嘉炜的blog">
+<meta property="og:description" content="CSS布局是前端笔面试经常会被问到的问道。 今天总结一下五种方法 实现三栏布局 两边固定宽度 中间自适应的实现 。  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566      *&amp;#123;    m">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/10864329-a0526f1b481a0d63?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-03-28T13:28:41.802Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="实现三栏布局 中间自适应的五种方法">
+<meta name="twitter:description" content="CSS布局是前端笔面试经常会被问到的问道。 今天总结一下五种方法 实现三栏布局 两边固定宽度 中间自适应的实现 。  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566      *&amp;#123;    m">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/10864329-a0526f1b481a0d63?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternate" href="/atom.xml" title="陈嘉炜的blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">陈嘉炜的blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">乱七八糟的全栈</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-实现三栏布局 中间自适应的五种方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/13/实现三栏布局 中间自适应的五种方法/" class="article-date">
+  <time datetime="2018-03-13T15:29:00.000Z" itemprop="datePublished">2018-03-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      实现三栏布局 中间自适应的五种方法
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>CSS布局是前端笔面试经常会被问到的问道。</p>
+<p>今天总结一下五种方法 实现三栏布局 两边固定宽度 中间自适应的实现 。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/10864329-a0526f1b481a0d63?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div></pre></td><td class="code"><pre><div class="line">      *&#123;</div><div class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.layout</span> &#123;</div><div class="line">    <span class="attribute">margin-top</span>: <span class="number">20px</span>;</div><div class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.layout</span> <span class="selector-class">.left</span>,<span class="selector-class">.layout</span> <span class="selector-class">.right</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</div><div class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">    <span class="attribute">background-color</span>: <span class="number">#f7e4e4</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.layout</span> <span class="selector-class">.center</span> &#123;</div><div class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">    <span class="attribute">background-color</span>: <span class="number">#e7aaaa</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 1. 通过浮动  */</span></div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.float</span> <span class="selector-class">.left</span> &#123;</div><div class="line">    <span class="attribute">float</span>: left;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.float</span> <span class="selector-class">.right</span> &#123;</div><div class="line">    <span class="attribute">float</span>: right;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 2. 通过绝对定位  */</span></div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.absolute</span>&gt;<span class="selector-tag">div</span> &#123;</div><div class="line">    <span class="attribute">position</span>: absolute;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.absolute</span> <span class="selector-class">.left</span> &#123;</div><div class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.absolute</span> <span class="selector-class">.right</span> &#123;</div><div class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.absolute</span> <span class="selector-class">.center</span> &#123;</div><div class="line">    <span class="attribute">right</span>: <span class="number">300px</span>;</div><div class="line">    <span class="attribute">left</span>: <span class="number">300px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 3. 通过flex  */</span></div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.flex</span> &#123;</div><div class="line">    <span class="attribute">display</span>: flex;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.flex</span> <span class="selector-class">.center</span> &#123;</div><div class="line">    <span class="attribute">flex</span>: <span class="number">1</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 4. 通过table-cell  */</span></div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.table</span> &#123;</div><div class="line">    <span class="attribute">display</span>: table;</div><div class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.table</span>&gt;<span class="selector-tag">div</span> &#123;</div><div class="line">    <span class="attribute">display</span>: table-cell;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 5. 通过grid布局  */</span></div><div class="line"><span class="selector-class">.layout</span><span class="selector-class">.grid</span> &#123;</div><div class="line">    <span class="attribute">display</span>: grid;</div><div class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">    <span class="attribute">grid-template-rows</span>: <span class="number">100px</span>;</div><div class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">300px</span> auto <span class="number">300px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/13/实现三栏布局 中间自适应的五种方法/" data-id="cjfb4mmsw0009s4xcjyk2gkd7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/03/15/ES6 常用语法 二/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          ES6 常用语法 二
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/03/11/ES6 常用语法 一/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ES6 常用语法 一</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6-JS基础/">ES6 JS基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS-Jquery/">JS Jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS基础/">JS基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/基础/">基础</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/ES6-JS基础/" style="font-size: 10px;">ES6 JS基础</a> <a href="/tags/JS-Jquery/" style="font-size: 10px;">JS Jquery</a> <a href="/tags/JS基础/" style="font-size: 10px;">JS基础</a> <a href="/tags/基础/" style="font-size: 10px;">基础</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/26/BFC 块级格式上下文/">BFC 块级格式上下文</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/16/前端实现三角形的三种方法/">前端实现三角形的三种方法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/15/ES6 常用语法 二/">ES6 常用语法 二</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/13/实现三栏布局 中间自适应的五种方法/">实现三栏布局 中间自适应的五种方法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/11/ES6 常用语法 一/">ES6 常用语法 一</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 陈嘉炜<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
